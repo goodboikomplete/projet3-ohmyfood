@@ -1,0 +1,442 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.header, .footer{
+	width: 100%;
+	background-color: #5f9ea0;
+
+}
+
+.header{
+	top:0;
+	width: 100%;
+	left: 0;
+}
+
+.footer{
+	
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 60px;
+	position: fixed;
+	padding: 30px;
+}
+
+h1{
+	text-align: center;
+	font-size: 52px;
+	color: yellow;
+	padding: 30px;
+	font-family: sans-serif;
+}
+
+h4 {
+	font-size: 23px;
+	padding-top: 30px;
+	text-align: center;
+	padding-bottom: 15px;
+	
+}
+
+.h4menu1{
+	color: black;
+	font-family: courgette;
+}
+
+h5{
+	text-align: center;
+	padding: 30px;
+}
+
+h2 {
+	font-family: sans-serif;
+	font-size: 15px;
+	color: yellow;
+}
+
+
+h3{
+	font-family: sans-serif;
+	font-size: 13px;
+	color: yellow;	
+}
+
+p{
+	line-height: 2.8;
+	padding-top: 3%;
+}
+
+.pmenu1{
+	color: black;
+	font-weight: lighter;
+	font-family: courgette;
+	font-size: 15px;
+}
+
+.pmenu2{
+	font-family: times new roman;
+}
+
+
+#menuname2{
+	background: linear-gradient(to right, orange, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#menuname3{
+	font-family: comic sans ms;
+	background: linear-gradient(blue, lightblue);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+.menu2color1{
+	color: #d2691e;
+}
+
+.menu2color2{
+	color: #9932cc;
+}
+
+.menu2color3{
+	color: #0000cd;
+}
+
+.parentprix{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.main-wrapper{   
+	
+	top:0;
+	margin: 0px;
+	background-color: #fffff0;
+	padding: 50px;
+	padding-bottom: 10%;
+	align-items: center;
+}
+
+.boxmenu{
+	height: 80%;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.boxmenu1{
+	background-color: #ffe4e1;
+}
+
+.boxmenu2{
+	background-color: #fff0f5;
+}
+
+.boxmenu3{
+	background-color: #f0f8ff;
+}
+
+.boxmenu4{
+	background-color: #fdf5e6 ;
+	
+}
+
+.box{
+	padding: 10%;
+}
+
+.h4-parent{
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+}
+
+.icon{
+	font-size: 50px;
+	text-align: center;
+	background: linear-gradient(orange, red);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+.mention h2{
+	font-family: sans-serif;
+	font-size: 15px;
+	color: yellow;
+	cursor: pointer;
+}
+
+#menuname1, #menuname2, #menuname3, #menuname4{
+	font-size: 33px;
+}
+
+#menuname1{
+	color: black;
+	font-family: serif;
+	font-family: courgette;
+}
+
+#menuname2, h4{
+	font-family: times new roman;
+}
+
+#menuname4{
+	font-family: comic sans ms;
+	background: linear-gradient(green, lightgreen);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+.pmenu4{
+	color: black;
+	font-family: comic sans ms;
+	font-size: 15px;
+}
+
+#h4anim3{
+	color: black;
+	font-family: comic sans ms;
+}
+
+#h4anim4{
+	font-family: comic sans ms;
+	color: black;
+}
+
+.pmenu3{
+	font-family: comic sans ms;
+	color: black;
+	font-size: 15px;
+}
+
+.pmenu3{
+	font-size: 15px;
+}
+
+
+.h4anim{
+	position: relative;
+	display: inline-block;
+}
+
+.h4anim::before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 3px;
+	bottom: 0;
+	background-color: white;
+	transform-origin: bottom right;
+	transition: transform 0.35s ease-out;
+
+}
+
+.h4anim:hover::before{
+	transform: scaleX(1);
+	transform-origin: left;
+}
+
+#h4anim1::before{
+	background: linear-gradient(to left, orange, red);
+}
+
+#h4anim2-1::before{
+	background-color: #d2691e;
+}
+
+#h4anim2-2::before{
+	background-color: #9932cc;
+}
+
+#h4anim2-3::before{
+	background-color: #0000cd;
+}
+
+#h4anim3::before{
+	background: linear-gradient(to left, lightblue, blue);
+}
+
+#h4anim4::before{
+	background: linear-gradient(to left, lightgreen, green);
+}
+
+
+
+/*--------------LIGNE---------------*/
+
+.ligneh4{
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.ligneh4::before, .ligneh4::after{
+	content: '';
+	flex: 1;
+	border-bottom: 3px solid black;
+	padding-top: 15px;
+}
+
+.ligneh4::before{
+	margin-right: 1em;
+}
+
+.ligneh4::after{
+	margin-left: 1em;
+}
+
+.ligneh4-menu2-1{
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.ligneh4-menu2-1::before, .ligneh4-menu2-1::after{
+	content: '';
+	flex: 1;
+	border-bottom: 3px solid #d2691e;
+	padding-top: 15px;
+}
+
+.ligneh4-menu2-1::before{
+	margin-right: 1em;
+}
+
+.ligneh4-menu2-1::after{
+	margin-left: 1em;
+}
+
+.ligneh4-menu2-2{
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.ligneh4-menu2-2::before, .ligneh4-menu2-2::after{
+	content: '';
+	flex: 1;
+	border-bottom: 3px solid #9932cc;
+	padding-top: 15px;
+}
+
+.ligneh4-menu2-2::before{
+	margin-right: 1em;
+}
+
+.ligneh4-menu2-2::after{
+	margin-left: 1em;
+}
+
+.ligneh4-menu2-3{
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.ligneh4-menu2-3::before, .ligneh4-menu2-3::after{
+	content: '';
+	flex: 1;
+	border-bottom: 3px solid #0000cd;
+	padding-top: 15px;
+}
+
+.ligneh4-menu2-3::before{
+	margin-right: 1em;
+}
+
+.ligneh4-menu2-3::after{
+	margin-left: 1em;
+}
+
+.ligneh4-menu3{
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.ligneh4-menu3::before, .ligneh4-menu3::after{
+	content: '';
+	flex: 1;
+	border-bottom: 3px solid blue;
+	padding-top: 15px;
+}
+
+.ligneh4-menu3::before{
+	margin-right: 1em;
+}
+
+.ligneh4-menu3::after{
+	margin-left: 1em;
+}
+
+.ligneh4-menu4{
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.ligneh4-menu4::before, .ligneh4-menu4::after{
+	content: '';
+	flex: 1;
+	border-bottom: 3px solid #8fbc8f;
+	padding-top: 15px;
+}
+
+.ligneh4-menu4::before{
+	margin-right: 1em;
+}
+
+.ligneh4-menu4::after{
+	margin-left: 1em;
+}
+
+@media screen and (max-width: 1200px){
+	.boxmenu1{
+		width: 90%;
+	}
+
+}
+
+@media screen and (max-width: 800px){
+	.boxmenu1{
+		width: 100%;
+		margin: 0;
+		margin-bottom: 50%;
+	}
+
+	h4{
+		font-size: 13px;
+	}
+
+	h1{
+		font-size: 35px;
+	}
+
+	p{
+		font-size: 7px;
+	}
+
+	#menuname1, #menuname2, #menuname3, #menuname4{
+		font-size:15px;
+	}
+
+	.pmenu3, .pmenu4{
+		font-size: 7px;
+	}
+}
+
+
+
+
+
