@@ -402,7 +402,7 @@ a{
 }
 
 @media screen and (max-width: 1200px){
-	.boxmenu1{
+	.boxmenu{
 		width: 90%;
 	}
 
@@ -423,17 +423,15 @@ a{
 		font-size: 35px;
 	}
 
-	p{
-		font-size: 7px;
+	.pmenu1, .pmenu2, .pmenu3, .pmenu4{
+		font-size: 8px;
 	}
 
 	#menuname1, #menuname2, #menuname3, #menuname4{
 		font-size:15px;
 	}
 
-	.pmenu3, .pmenu4{
-		font-size: 7px;
-	}
+	
 }
 
 
