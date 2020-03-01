@@ -409,7 +409,7 @@ a{
 }
 
 @media screen and (max-width: 800px){
-	.boxmenu1{
+	.boxmenu{
 		width: 100%;
 		margin: 0;
 		margin-bottom: 50%;
