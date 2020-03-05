@@ -26,7 +26,7 @@
 	justify-content: space-between;
 	height: 60px;
 	position: fixed;
-	padding: 30px;
+	padding: 25px;
 }
 
 h1{
@@ -60,6 +60,24 @@ h2 {
 	font-size: 15px;
 	color: yellow;
 }
+
+.mention:hover{
+	cursor: pointer;
+	animation: shake .3s normal forwards ease-in-out;
+}
+
+.contact:hover{
+	animation: shake .3s normal forwards ease-in-out;
+}
+
+@keyframes shake{
+	0%{ transform: rotate(0deg); }
+	25%{ transform: rotate(6deg); }
+	50%{ transform: rotate(-6deg); }
+	75%{ transform: rotate(6deg); }
+	100%{ transform: rotate(0deg); }
+}
+
 
 
 h3{
