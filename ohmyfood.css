@@ -30,6 +30,10 @@
 	padding: 25px;
 }
 
+.box-wrap{
+	align-items: center;
+}
+
 main
 {
 	width: 100%;
@@ -98,12 +102,15 @@ h3{
 
 h4{
 	font-size: 24px;
+
 }
 
 h5{
 	font-size: 40px;
 	text-transform: uppercase;
 	line-height: 4;
+	padding-bottom: 50px;
+	
 }
 
 p{
@@ -123,6 +130,7 @@ p{
 .box{
 	transition: transform ease-in-out .5s;
 	transition: opacity ease-in-out.5s;
+	display: inline-block;
 }
 
 .point{
@@ -201,12 +209,18 @@ p{
 }
 
 .box{
-	width: 35%;
+	width: 100%;
 	text-align: center;
-	height: 100%;
 	overflow: hidden;
 	box-shadow: 3px 3px 2px 1px lightgrey;
+	display: inline-block;
 }
+
+.fullbox{
+	padding: 30px;
+	width: 100%;
+}
+
 
 .box:hover{
 	opacity: .5;
@@ -221,6 +235,13 @@ p{
 .box-content:hover{
 	transform: scale(1.25);
 	
+}
+
+.flex1, .flex2{
+	display: flex;
+	justify-content: center;
+	justify-content: space-around;
+	padding: 30px;
 }
 
 /*----------------------------------COLOR-----------------------------------------------*/
@@ -243,8 +264,8 @@ p{
 
 .box2, .box3, .box4{
 	padding-top: 35%;
-	padding-bottom: 2%;
 }
+
 
 .content1{
 	padding-top: 9%;
@@ -260,13 +281,7 @@ p{
 
 }
 
-.flex1, .flex2{
-	display: flex;
-	justify-content: center;
-	justify-content: space-between;
-	justify-content: space-around;
-	padding: 30px;
-}
+
 
 .mention:hover{
 	cursor: pointer;
@@ -291,51 +306,37 @@ p{
 
 /* --------------------------------------MEDIA QUERIES-----------------------------------------------*/
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 800px){
+	
 	h4{
-		font-size: 18px;
+		padding:20px;
 	}
 	h5{
-		font-size: 30px;
-	}
-	.icon{
-		display: none;
-	}
-	.content1{
-		padding-top: 37%;
-	}
-	.box2, .box3, .box4{
-		height: 100%;
-	}
-}
-
-@media screen and (max-width: 700px){
-	.box{
-		width: 40%;
-		height: 30%;
+		font-size: 15px;
+		text-align: center;
+		padding: 20px;
 	}
 
 	h1{
-		font-size: 30px;
+		font-size: 40px;
 	}
-
-	h2{
-		font-size: 13px;
-	}
-
-	h4{
-		font-size: 13px;
-	}
-
-
-
-	h5{
-		font-size: 18px;
-	}
-
-	.box-content:hover{
-	transform: scale(1.1);
 	
+	.box1, .box2, .box3, .box4{
+		text-align: center;
+	}
+
+	.flex1, .flex2{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	}
+
+	.box{
+		width: 100%;	
+	}
+
+	.fullbox{
+		width: 100%;
 	}
 
 	.button{
@@ -348,12 +349,16 @@ p{
 		font-size: 13px;
 	}
 
-	.mainwrapper{
-		height: 100%;
+	.box-content:hover{
+	transform: scale(1.1);
+	
 	}
 
 
 }
+
+
+
 
 
 
