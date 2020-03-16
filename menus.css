@@ -234,12 +234,12 @@ a{
 	font-size: 15px;
 }
 
-#h4anim3{
+.h4anim3{
 	color: black;
 	font-family: comic sans ms;
 }
 
-#h4anim4{
+.h4anim4{
 	font-family: comic sans ms;
 	color: black;
 }
@@ -278,7 +278,7 @@ a{
 	transform-origin: left;
 }
 
-#h4anim1::before{
+.h4anim1::before{
 	background: linear-gradient(to left, orange, red);
 }
 
@@ -294,11 +294,11 @@ a{
 	background-color: #0000cd;
 }
 
-#h4anim3::before{
+.h4anim3::before{
 	background: linear-gradient(to left, lightblue, blue);
 }
 
-#h4anim4::before{
+.h4anim4::before{
 	background: linear-gradient(to left, lightgreen, green);
 }
 
