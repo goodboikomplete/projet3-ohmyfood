@@ -91,6 +91,17 @@ p{
 	padding-top: 3%;
 }
 
+.mentionp{
+	font-family: sans-serif;
+}
+
+.mention{
+	font-size: 25px;
+	color: black;
+	font-family: sans-serif;
+	text-align: center;
+}
+
 .pmenu1{
 	color: black;
 	font-weight: lighter;
